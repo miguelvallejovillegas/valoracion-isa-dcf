@@ -1,0 +1,27 @@
+clave,valor,unidad,descripcion
+empresa,Empresa Ejemplo S.A.,texto,Nombre de la empresa (ejemplo ficticio: cámbielo por la suya)
+anio_base,2025,año,Último año con estados financieros reales
+dias_a_cierre,62,días,Días entre la fecha de valoración y el cierre del año base + 1 (0 si valora al cierre)
+precio,15000,moneda local,Precio de la acción en la fecha de valoración
+acciones,500,millones,Acciones en circulación
+ingresos_base,5000,moneda local mm,Ingresos del año base
+capital_invertido_base,11500,moneda local mm,Deuda + patrimonio − caja − inversiones no operativas al cierre del año base
+treasury_10a,0.045,%,Bono del Tesoro de EE. UU. a 10 años
+default_usa,0.0023,%,Diferencial de default de EE. UU. (Damodaran)
+erp,0.0433,%,Prima de riesgo de mercado maduro (Damodaran)
+crp,0.0285,%,Prima de riesgo país (ponderada por ingresos si opera en varios países)
+default_pais,0.0187,%,Diferencial de default soberano (para el Kd)
+lambda,1.0,x,Exposición al riesgo país (1 = exposición promedio)
+beta_desapalancada,0.80,x,Beta desapalancada del sector (Damodaran) ponderada por negocio
+tasa_marginal,0.35,%,Tasa marginal de impuestos (escudo fiscal y Hamada)
+tasa_efectiva,0.30,%,Tasa efectiva de impuestos sobre el EBIT
+spread_empresa,0.0175,%,Spread de la compañía por rating sintético (cobertura de intereses)
+pi_local,0.040,%,Inflación esperada de largo plazo en moneda local
+pi_usd,0.024,%,Inflación esperada de largo plazo en USD
+deuda,4000,moneda local mm,Deuda financiera (idealmente a valor de mercado)
+caja,600,moneda local mm,Caja y activos financieros
+minoritarios,0,moneda local mm,Interés minoritario (a mercado si cotiza)
+inversiones_no_operativas,250,moneda local mm,Participaciones en otras empresas no consolidadas
+g,0.040,%,Crecimiento nominal a perpetuidad (≤ crecimiento nominal de la economía)
+ronic,,%,ROIC de madurez; vacío = ROIC del último año proyectado
+wacc_manual,,%,Si se llena se usa en lugar del WACC calculado

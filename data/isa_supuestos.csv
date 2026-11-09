@@ -1,0 +1,93 @@
+grupo,clave,valor,unidad,descripcion,fuente
+supuestos,precio,27220,COP,Precio de la acción,Cierre 30 octubre 2026 Bloomberg
+supuestos,default_usa,0.0023,%,Diferencial de default de EE. UU.,Damodaran
+supuestos,erp,0.0417,%,Prima de riesgo de mercado maduro (ERP implícita),"Damodaran, ERP implícita del S&P 500, julio de 2026."
+supuestos,crp_col,0.0285,%,CRP Colombia,"Damodaran 'Country Risk Premiums', ene-2026"
+supuestos,def_col,0.0187,%,Diferencial de default soberano Colombia,"Damodaran, ene-2026."
+supuestos,crp_bra,0.0324,%,CRP Brasil,"Damodaran 'Country Risk Premiums', ene-2026"
+supuestos,def_bra,0.0213,%,Diferencial de default soberano Brasil,"Damodaran, ene-2026."
+supuestos,crp_per,0.0207,%,CRP Perú,"Damodaran 'Country Risk Premiums', ene-2026"
+supuestos,def_per,0.0136,%,Diferencial de default soberano Perú,"Damodaran, ene-2026."
+supuestos,crp_chi,0.011,%,CRP Chile,"Damodaran 'Country Risk Premiums', ene-2026"
+supuestos,def_chi,0.0072,%,Diferencial de default soberano Chile,"Damodaran, ene-2026."
+supuestos,crp_pan,0.0285,%,CRP Panamá y otros,"Damodaran 'Country Risk Premiums', ene-2026"
+supuestos,def_pan,0.0187,%,Diferencial de default soberano Panamá y otros,"Damodaran, ene-2026."
+supuestos,lambda,1,x,Lambda (exposición al riesgo país),Isa está 100% expuesta
+supuestos,bu_energia,0.46,x,Beta desapalancada Energía: Damodaran 'Power' (global),"Damodaran, betas globales ene-2026 (486 empresas)."
+supuestos,bu_vias,0.55,x,Beta desapalancada Vías: Damodaran 'Transportation (Railroads)' (global),"Concesiones viales, son más cercanas a infraestructura de rieles (0,55) que a 'Transportation' (0,75, incluye aerolíneas y camiones)."
+supuestos,bu_telecom,0.5,x,Beta desapalancada Telecomunicaciones: Damodaran 'Telecom. Services' (global),283 empresas
+supuestos,t_marginal,0.33,%,Tasa marginal de impuestos,"Promedio ponderado por ingresos: Colombia 35%, Brasil 34%, Perú 29,5%, Chile 27%."
+supuestos,spread_empresa,0.014,%,Diferencial de la compañía (rating sintético BBB),"Damodaran: cobertura EBIT/intereses 2,5x-3,0x"
+supuestos,g,0.047,%,Crecimiento nominal a perpetuidad desde 2037 (g),"inflación LP COP (4,7%)"
+supuestos,peso_dcf,0.7,%,Peso del DCF en el precio objetivo,Creemos que el DCF es la valoración principal porque refleja los flujos propios de ISA
+supuestos,peso_comparables,0.3,%,Peso de los comparables,"Menor peso debido a que los comparables reflejan sentimiento de mercado, no un valor intrinseco, ademas comparables de diferentes paises y negocios "
+supuestos,caja_2026,4065,COP bn,Caja y activos financieros al cierre de 2026E,Caja mínima de operación ($3.500) + otros activos financieros ($565)
+supuestos,rend_capex_energia,0.11,%,Rendimiento del capex nuevo – Energía (ingreso anual / capex del año anterior),ANEEL 2025-26: 11% por mejores proyectos
+supuestos,rend_capex_vias,0.08,%,Rendimiento del capex nuevo – Vías,Concesiones viales y peajes indexados con plazo definido.
+supuestos,rend_capex_telecom,0.1,%,Rendimiento del capex nuevo – Telecomunicaciones,
+supuestos,erosion_energia,0.029,%,Maduración regulatoria y compresión tarifaria (Revisão Periódica) – Energía,Solo desde 2031E. Calibrada para que el ROIC de 2036E quede igual al de 2030E 
+supuestos,erosion_vias,0.03,%,Pérdida anual de ingresos de activos existentes – Vías,"Solo desde 2031E (en 2026E-2030E los vencimientos conocidos, como la Ruta de la Araucanía, van como eventos puntuales). Las concesiones viales revierten al Estado al vencer."
+supuestos,erosion_telecom,0,%,Pérdida anual de ingresos de activos existentes – Telecomunicaciones,Internexa no tiene concesiones que venzan ni revisiones tarifarias
+supuestos,capex_ing_2036_energia,0.25,%,Capex / ingresos en 2036E – Energía (fin de la curva),2026E-2030E: plan de ISA por segmento; 2031E-2036E: el % converge linealmente a este valor
+supuestos,capex_ing_2036_vias,0.12,%,Capex / ingresos en 2036E – Vías,"Vías invierte menos que Energía una vez termina el plan, porque las concesiones revierten al Estado"
+supuestos,capex_ing_2036_telecom,0.1,%,Capex / ingresos en 2036E – Telecomunicaciones,Internexa mantiene un capex parecido al de Vías al final de la curva
+supuestos,da_ingresos,0.09,%,D&A / ingresos sin construcción,"2024A: 9,1%; 2025A: 9,6%."
+supuestos,ct_incremental,0.05,%,Aumento del capital de trabajo / aumento de ingresos,"Equivale a ~18 días de los ingresos adicionales, la RAP regulada se factura y se cobra mes a mes, así que el capital de trabajo crece poco. El histórico 2022-2025 es muy ruidoso (+161, −974, −189, +461)"
+supuestos,adquisicion_2026,776,COP bn,Adquisiciones 2026E (IE Madeira),ISA Energia Brasil compra el 49% de IE Madeira en 2026
+supuestos,aporte_minoritarios_2026,752,COP bn,Aporte de minoritarios 2026E (follow-on de ISA Energia Brasil),"Follow-on de ISA Energia Brasil de julio 2026 (~$752 mil millones), ISA no suscribió así que todo el aporte es de terceros."
+supuestos,g_cocontroladas,0.05,%,Crecimiento del resultado de co-controladas,"Cerca de la inflación de LP en COP (4,7%), porque las co-controladas también son concesiones indexadas. No mueve el DCF después de 2026E porque van a libros pero sí mueve la utilidad y el DDM."
+supuestos,part_minoritarios_utilidad,0.39,%,Participación de minoritarios en la utilidad,
+supuestos,payout,0.5,%,Payout de dividendos,Política de ISA es repartir ~50% de la utilidad.
+supuestos,part_isa_en_isaeb,0.3355,%,Participación económica de ISA en ISA Energia Brasil,ISA 2T26
+supuestos,mp_madeira_2025,176.526,COP bn,Método de participación 2025 – IE Madeira (51%),Estados financieros consolidados 2025
+supuestos,mp_garanhuns_2025,50.726,COP bn,"Método de participación 2025 – IE Garanhuns (51%, se entrega en el canje)",
+supuestos,libros_madeira,1566.284,COP bn,Inversión en libros dic-25 – IE Madeira (51%),
+supuestos,libros_garanhuns,412.137,COP bn,Inversión en libros dic-25 – IE Garanhuns (51%),
+supuestos,deuda_neta_madeira_brl,588.2,R$ mn,"Deuda neta de IE Madeira, dic-25","ISA Energia Brasil, hecho relevante del canje con Axia, se consolida desde agosto 2026"
+supuestos,patrimonio_isaeb_brl,25053,R$ mn,"Patrimonio en libros de ISA Energia Brasil (R$ mn, jun-26 + follow-on)",ITR 2T26: R$ 23.853 mn + follow-on de jul-26: R$ 1.200 mn.
+supuestos,pi_cop_lp,0.047,%,Inflación esperada de largo plazo en COP,Promedio 2027-2028 Bloomberg
+supuestos,pi_usd_lp,0.0235,%,Inflación esperada de largo plazo en USD,Promedio 2027-2028 Bloomberg
+supuestos,dias_a_31dic,62,días,Días entre la fecha de corte (30-oct-2026) y el 31-dic-2026,
+mercado,treasury_10a,0.049289,%,Treasury de 10 años al 30-oct-2026,Bloomberg USGG10YR
+mercado,usdcop_spot,3194.92,COP,USD/COP al 30-oct-2026,Bloomberg
+mercado,usdbrl_spot,5.4378,BRL,USD/BRL al 30-oct-2026,Bloomberg
+mercado,usdclp_spot,992.95,CLP,USD/CLP al 30-oct-2026,Bloomberg
+mercado,cap_isaeb,11571.8,COP bn,Capitalización de ISA Energia Brasil (ISAE4) al 30-oct-2026,Bloomberg
+mercado,valor_comparables,26708.91410922831,COP,"Valor por acción por comparables (mediana del grupo núcleo, hoja E8 del Excel)",Modelo Excel E8
+pesos_pais,peso_col,0.305,%,Peso de Colombia en ingresos sin construcción 2026E,Ingresos sin construcción 2026E por país
+pesos_pais,peso_bra,0.3931,%,Peso de Brasil en ingresos sin construcción 2026E,Ingresos sin construcción 2026E por país
+pesos_pais,peso_per,0.1359,%,Peso de Perú en ingresos sin construcción 2026E,Ingresos sin construcción 2026E por país
+pesos_pais,peso_chi,0.1453,%,Peso de Chile en ingresos sin construcción 2026E,Ingresos sin construcción 2026E por país
+pesos_pais,peso_pan,0.0207,%,Peso de Panamá y otros en ingresos sin construcción 2026E,Ingresos sin construcción 2026E por país
+base_2025,ing_energia_2025,8746,COP bn,Energía (transmisión),ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,ing_vias_2025,1924,COP bn,Vías,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,ing_telecom_2025,516,COP bn,Telecomunicaciones,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,utilidad_construccion_2025,609,COP bn,Utilidad bruta de construcción,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,cocontroladas_2025,494,COP bn,(+) Resultados de co-controladas y asociadas,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,ebitda_2025,8680,COP bn,EBITDA,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,da_2025,-1078,COP bn,"(−) Depreciaciones, amortizaciones y deterioro",ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,minoritario_resultado_2025,-1489,COP bn,(−) Interés minoritario,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,utilidad_neta_2025,2420,COP bn,UTILIDAD NETA (atribuible a ISA),ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,acciones,1107.677894,millones,Acciones en circulación,ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,dpa_2025,1090,COP bn,Dividendo por acción decretado (se paga el año siguiente),ISA estados financieros 2025 (hoja Estado de Resultados)
+base_2025,caja_2025,4466,COP bn,Efectivo y equivalentes de efectivo,ISA estados financieros 2025 (hoja Balance General)
+base_2025,otros_act_fin_2025,565,COP bn,Otros activos financieros,ISA estados financieros 2025 (hoja Balance General)
+base_2025,inv_cocontroladas_2025,4231,COP bn,Inversiones en negocios conjuntos y asociadas,ISA estados financieros 2025 (hoja Balance General)
+base_2025,interes_minoritario_2025,10458,COP bn,Interés minoritario,ISA estados financieros 2025 (hoja Balance General)
+base_2025,patrimonio_total_2025,28307,COP bn,TOTAL PATRIMONIO,ISA estados financieros 2025 (hoja Balance General)
+base_2025,deuda_financiera_2025,33791,COP bn,Deuda financiera total (valor en libros),ISA estados financieros 2025 (hoja Balance General)
+impuestos,uai_2022,4681.498,COP bn,Utilidad antes de impuestos,ISA EEFF
+impuestos,impuesto_2022,-1005.464,COP bn,Impuesto de renta,ISA EEFF
+impuestos,cocontroladas_2022,515.746,COP bn,Resultado de co-controladas,ISA EEFF
+impuestos,uai_2023,5431,COP bn,Utilidad antes de impuestos,ISA EEFF
+impuestos,impuesto_2023,-1129,COP bn,Impuesto de renta,ISA EEFF
+impuestos,cocontroladas_2023,530,COP bn,Resultado de co-controladas,ISA EEFF
+impuestos,uai_2024,6318,COP bn,Utilidad antes de impuestos,ISA EEFF
+impuestos,impuesto_2024,-1387,COP bn,Impuesto de renta,ISA EEFF
+impuestos,cocontroladas_2024,540,COP bn,Resultado de co-controladas,ISA EEFF
+impuestos,uai_2025,5020,COP bn,Utilidad antes de impuestos,ISA EEFF
+impuestos,impuesto_2025,-1111,COP bn,Impuesto de renta,ISA EEFF
+impuestos,cocontroladas_2025,494,COP bn,Resultado de co-controladas,ISA EEFF
+supuestos,rbse_ajuste_2025_brl,818,R$ mn,Ajuste no recurrente de la RBSE del 2T25 que se revierte en 2026,ISA 2T26: $594 mil millones COP ÷ COP/BRL 726
+supuestos,cuota_dic_pct,0.8,%,Fracción del DPA 2025 que se paga el 16-dic-2026 (cuota de $872),"Asamblea de ISA, mar-2026"
+supuestos,payout_minoritarios,0.5,%,Dividendos a minoritarios / su utilidad del año anterior,Supuesto del modelo
